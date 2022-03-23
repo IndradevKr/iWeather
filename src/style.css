@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Josefin+Sans&family=Rye&display=swap');
+
+:root {
+  --rye-font : 'Rye', cursive;
+  --merianda-one-font : 'Merienda One', cursive;
+  --josefin-sans-font: 'Josefin Sans', sans-serif;
+  --eggshell-color: #f0ead6;;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--merianda-one-font);
+}
+
+.container{
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background: url('https://cdn.pixabay.com/photo/2012/04/14/16/37/sky-34536_640.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#search__city{
+  width: 50%;
+  height: 2rem;
+  letter-spacing: 2px;
+  margin-top: 2rem;
+  border-radius: 2rem;
+  padding: 1.5rem;
+  background-color: #7a96c0;
+  border-color: transparent;
+  font-size: 1.5rem;
+  font-family: var(--josefin-sans-font);
+}
+#search__city:focus{
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  border-color: transparent;
+  letter-spacing: 0.063rem;
+  cursor: pointer;
+}
+
+.location-details{
+  margin-top: 2.5rem;
+}
+
+.fa-location-dot {
+  color: var(--eggshell-color);
+  font-size: 2.2rem;
+  margin-top: 2rem;
+}
+.fa-temperature-half, .fa-droplet, .fa-cloud-sun{
+  color: var(--eggshell-color);
+  font-size: 1.5rem;
+} 
+.city__name{
+  font-size: 2.5rem;
+  color: var(--eggshell-color);
+  margin-left: 1rem;
+  font-family: var(--rye-font);
+}
+.country{
+  margin-top: 1rem;
+  font-size: 2.5rem;
+  color: var(--eggshell-color);
+}
+.weather-details {
+  text-align: center;
+  margin-top: 3rem;
+}
+.temperature-reading {
+  font-weight: bold;
+  font-size: 2rem;
+  color: var(--eggshell-color);
+  margin-left: 1rem;
+}
+.humidity-details, .cloud-details{
+  margin-left: 4rem;
+  margin-top: 3rem;
+}
+.humidity, .cloud{
+  font-weight: bold;
+  font-size: 2rem;
+  color: var(--eggshell-color);
+  margin-left: 1rem;
+}
+.weather-seems{
+  text-align: center;
+  letter-spacing: 1px;
+  color: var(--eggshell-color);
+  margin-top: 2.5rem;
+}
+
+.min, .feels, .max {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  margin-top: 3rem;
+}
+
+.time-details {
+  margin-top: 4rem;
+}
+.time {
+  margin-left: 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+  color: var(--eggshell-color);
+  letter-spacing: 0.063rem;
+  font-family: var(--josefin-sans-font);
+}
+
+.date-details{
+  margin-top: 1.5rem;
+}
+.fa-clock, .fa-calendar-days{
+  color: var(--eggshell-color);
+  font-weight: bold;
+  font-size: 1rem;
+}
+.date{
+  color: var(--eggshell-color);
+  margin-left: 2rem;
+  letter-spacing: 0.063rem;
+}
+
+@media (max-width: 600px){
+ .weather-details, .humidity-details {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   padding-left: 0.5rem;
+ }
+ .cloud-details{
+   width: 100%;
+ }
+}
