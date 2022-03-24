@@ -4,7 +4,7 @@ import React from 'react';
 function App() {
 
   const [city, setCity] = React.useState()
-  const [searchQuery, setSearchQuery] = React.useState("Janakpur")
+  const [searchQuery, setSearchQuery] = React.useState("Kathmandu")
 
   React.useEffect( () => {
     let isMounted = true;

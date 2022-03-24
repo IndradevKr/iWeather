@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Josefin+Sans&family=Rye&display=swap');
-
+/* https://betterprogramming.pub/how-to-host-your-react-app-on-github-pages-for-free-919ad201a4cb */
 :root {
   --rye-font : 'Rye', cursive;
   --merianda-one-font : 'Merienda One', cursive;
@@ -36,17 +36,17 @@ body {
   letter-spacing: 2px;
   margin-top: 2rem;
   border-radius: 2rem;
-  padding: 1.5rem;
+  padding: 1.3rem;
   background-color: #7a96c0;
   border-color: transparent;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-family: var(--josefin-sans-font);
 }
 #search__city:focus{
   background: rgb(238,174,202);
   background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
   border-color: transparent;
-  letter-spacing: 0.063rem;
+  letter-spacing: 0.02rem;
   cursor: pointer;
 }
 
@@ -133,14 +133,78 @@ body {
   letter-spacing: 0.063rem;
 }
 
-@media (max-width: 600px){
+@media (max-width: 900px){
+  .container{
+    height: 100vh;
+  }
  .weather-details, .humidity-details {
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   padding-left: 0.5rem;
+  display: inline-block;
+  padding: 0.2rem;
  }
- .cloud-details{
+ .cloud-details, .weather-details, .humidity-details{
+   margin-top: 1rem;
+ }
+ .location-details{
+   margin-top: 1.5rem;
+ }
+ #search__city{
+   width: 80%;
+   font-size: 1rem;
+   letter-spacing: 1px;
+ }
+ .city__name{
+   font-size: 1.8rem;
+ }
+ .country{
+   font-size: 1.8rem;
+ }
+ .temperature-reading, .humidity, .cloud{
+   font-size: 1.5rem;
+ }
+ .min, .feels, .max{
+   margin-left: 0.5rem;
+   font-size: 1rem;
+ }
+ .date-details {
+   margin-top: 1rem;
+ }
+
+}
+
+@media (max-width: 600px){
+  .container{
+    height: 100vh;
+  }
+ .weather-details, .humidity-details {
+  display: block;
+  padding: 0.2rem;
+ }
+ .cloud-details, .weather-details, .humidity-details{
+   margin-top: 1rem;
+ }
+ .location-details{
+   margin-top: 1.5rem;
+ }
+ #search__city{
    width: 100%;
+   font-size: 1rem;
+   letter-spacing: 1px;
  }
+ .city__name{
+   font-size: 1.8rem;
+ }
+ .country{
+   font-size: 1.8rem;
+ }
+ .temperature-reading, .humidity, .cloud{
+   font-size: 1.5rem;
+ }
+ .min, .feels, .max{
+   margin-left: 0.5rem;
+   font-size: 1rem;
+ }
+ .date-details {
+   margin-top: 1rem;
+ }
+
 }
