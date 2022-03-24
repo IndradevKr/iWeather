@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/iWeather/static/css/main.e2eb2cc7.css",
+    "main.css": "/iWeather/static/css/main.9affa866.css",
     "main.js": "/iWeather/static/js/main.844d5060.js",
     "static/js/787.2cc5bf55.chunk.js": "/iWeather/static/js/787.2cc5bf55.chunk.js",
     "index.html": "/iWeather/index.html",
-    "main.e2eb2cc7.css.map": "/iWeather/static/css/main.e2eb2cc7.css.map",
+    "main.9affa866.css.map": "/iWeather/static/css/main.9affa866.css.map",
     "main.844d5060.js.map": "/iWeather/static/js/main.844d5060.js.map",
     "787.2cc5bf55.chunk.js.map": "/iWeather/static/js/787.2cc5bf55.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e2eb2cc7.css",
+    "static/css/main.9affa866.css",
     "static/js/main.844d5060.js"
   ]
 }
