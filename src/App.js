@@ -2,19 +2,17 @@ import './style.css';
 import React from 'react';
 
 function App() {
-
   const [city, setCity] = React.useState()
   const [searchQuery, setSearchQuery] = React.useState("Kathmandu")
 
   React.useEffect( () => {
     let isMounted = true;
     const fetchAPI = async() => {
-      const url = `https://api.openweathermap.org/data/2.5/weather?q=${searchQuery}&units=metric&appid=7efc987d11d07b37a86e166d40c3f359`
+      const url = `https://api.openweathermap.org/data/2.5/weather?q=${searchQuery}&units=metric&appid=${process.env.REACT_APP_API_KEY}`
       const response = await fetch(url)
       const responseJSON = await response.json()
       if (isMounted) {
         setCity(responseJSON);
-        console.log(responseJSON)
       }
       
       return () => {
